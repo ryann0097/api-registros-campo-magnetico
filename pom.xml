@@ -8,7 +8,7 @@
 		<version>3.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.desafiopotiguar</groupId>
+	<groupId>api-registros-campo-magnetico</groupId>
 	<artifactId>DesafioPotiguar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DesafioPotiguar</name>
