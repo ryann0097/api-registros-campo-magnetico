@@ -1,12 +1,12 @@
-# Stage 1: Build do jar
-FROM maven:3.8.6-openjdk-17 AS build
+# Stage 1: Build do jar usando Maven + JDK 21
+FROM maven:3.9.4-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
 
-# Stage 2: Imagem final com o jar gerado
-FROM openjdk:17-jdk-alpine
+# Stage 2: Imagem leve para rodar o jar com JDK 21
+FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/api-registros-campo-magnetico.jar app.jar
 EXPOSE 8080
