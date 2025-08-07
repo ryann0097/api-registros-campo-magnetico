@@ -8,8 +8,8 @@
 		<version>3.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>api-registros-campo-magnetico</groupId>
-	<artifactId>DesafioPotiguar</artifactId>
+	<groupId>br.com.desafiopotiguar</groupId>
+	<artifactId>api-registros-campo-magnetico</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DesafioPotiguar</name>
 	<description>API com endpoints para cadastro de informações sobre um gerador e medidor de campo magnético.</description>
