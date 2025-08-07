@@ -1,0 +1,74 @@
+.
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── br
+│   │   │       └── com
+│   │   │           └── desafiopotiguar
+│   │   │               └── DesafioPotiguar
+│   │   │                   ├── controller
+│   │   │                   │   └── MedicaoController.java
+│   │   │                   ├── DesafioPotiguarApplication.java
+│   │   │                   ├── dto
+│   │   │                   │   └── MedicaoDTO.java
+│   │   │                   ├── entity
+│   │   │                   │   ├── Bobina.java
+│   │   │                   │   ├── Medicao.java
+│   │   │                   │   └── Registro.java
+│   │   │                   ├── repository
+│   │   │                   │   ├── BobinaRepository.java
+│   │   │                   │   ├── MedicaoRepository.java
+│   │   │                   │   └── RegistroRepository.java
+│   │   │                   └── service
+│   │   │                       └── MedicaoService.java
+│   │   └── resources
+│   │       ├── application-local.yml
+│   │       ├── application.yml
+│   │       ├── static
+│   │       └── templates
+│   └── test
+│       └── java
+│           └── br
+│               └── com
+│                   └── desafiopotiguar
+│                       └── DesafioPotiguar
+│                           └── DesafioPotiguarApplicationTests.java
+├── target
+│   ├── classes
+│   │   ├── application.yml
+│   │   └── br
+│   │       └── com
+│   │           └── desafiopotiguar
+│   │               └── DesafioPotiguar
+│   │                   ├── controller
+│   │                   │   └── MedicaoController.class
+│   │                   ├── DesafioPotiguarApplication.class
+│   │                   ├── dto
+│   │                   │   └── MedicaoDTO.class
+│   │                   ├── entity
+│   │                   │   ├── Bobina.class
+│   │                   │   ├── Medicao.class
+│   │                   │   └── Registro.class
+│   │                   ├── repository
+│   │                   │   ├── BobinaRepository.class
+│   │                   │   ├── MedicaoRepository.class
+│   │                   │   └── RegistroRepository.class
+│   │                   └── service
+│   │                       └── MedicaoService.class
+│   ├── generated-sources
+│   │   └── annotations
+│   ├── generated-test-sources
+│   │   └── test-annotations
+│   └── test-classes
+│       └── br
+│           └── com
+│               └── desafiopotiguar
+│                   └── DesafioPotiguar
+│                       └── DesafioPotiguarApplicationTests.class
+└── tree.txt
+
+42 directories, 30 files
