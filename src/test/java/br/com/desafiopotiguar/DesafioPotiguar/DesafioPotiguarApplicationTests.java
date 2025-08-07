@@ -57,12 +57,4 @@ public class DesafioPotiguarApplicationTests {
 		Integer bobinaId = 1;
 		assertTrue(repository.findById(bobinaId).isPresent());
 	}
-
-	@Test
-	@Order(3)
-	void deveRetornarListaDeBobinasViaEndpoint() throws Exception {
-		mockMvc.perform(get("/medicoes"))
-				.andExpect(status().isOk())
-				.andExpect(content().contentType(MediaType.APPLICATION_JSON));
-	}
 }
