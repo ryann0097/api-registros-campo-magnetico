@@ -1,14 +1,13 @@
-# Usa uma imagem base com JDK
-FROM openjdk:17-jdk-alpine
-
-# Define o diretório de trabalho dentro do container
+# Stage 1: Build do jar
+FROM maven:3.8.6-openjdk-17 AS build
 WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package -DskipTests
 
-# Copia o arquivo JAR gerado para dentro do container
-COPY target/api-registros-campo-magnetico.jar app.jar
-
-# Expõe a porta padrão do Spring Boot
+# Stage 2: Imagem final com o jar gerado
+FROM openjdk:17-jdk-alpine
+WORKDIR /app
+COPY --from=build /app/target/api-registros-campo-magnetico.jar app.jar
 EXPOSE 8080
-
-# Comando para rodar a aplicação
 ENTRYPOINT ["java", "-jar", "app.jar"]
