@@ -2,9 +2,9 @@ spring:
   application:
     name:DesafioPotiguar
   datasource:
-    url: jdbc:postgresql://db.ybpekkiimczzfbhfazjm.supabase.co:5432/postgres
-    username: postgres
-    password: G3YFnDFsH6mAINrO
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: {DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
