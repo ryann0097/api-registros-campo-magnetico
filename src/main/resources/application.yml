@@ -1,10 +1,14 @@
 spring:
   application:
     name:DesafioPotiguar
+  config:
+    import: optional:application-local.yml
+  api:
+    auth-key: ${API_KEY}
   datasource:
     url: ${DB_URL}
     username: ${DB_USER}
-    password: {DB_PASSWORD}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -17,4 +21,3 @@ spring:
   jackson:
     serialization:
       INDENT_OUTPUT: true
-
